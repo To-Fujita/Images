@@ -1,0 +1,115 @@
+/*  CSS for Chat Bot by T. Fujita 2021/5/10 */
+body {
+    font-family: monospace;
+}
+h1 {
+    background-color: #D5F5E3;
+    display: inline-block;
+    font-size: 3em;
+    margin: 0;
+    padding: 5px;
+}
+h3 {
+    color: black;
+    font-size: 20px;
+    margin-top: 3px;
+    text-align: center;
+}
+#chatbox {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-top: 30px;
+}
+#userInput {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    margin-top: 100px;
+}
+#textInput {
+    width: 90%;
+    height: 2em;
+    border: none;
+    border-bottom: 3px solid black;
+    font-family: monospace;
+    font-size: 17px;
+}
+.userText {
+    color: white;
+    font-family: monospace;
+    font-size: 17px;
+    text-align: right;
+    line-height: 30px;
+}
+.userText span {
+    background-color: #808080;
+    padding: 10px;
+    border-radius: 2px;
+}
+.botText {
+    color: white;
+    font-family: monospace;
+    font-size: 17px;
+    text-align: left;
+    line-height: 30px;
+}
+.botText span {
+    background-color: #4169e1;
+    padding: 10px;
+    border-radius: 2px;
+}
+.boxed {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 450px;
+    margin-top: 20px;
+    border: 1px solid green;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+@media screen and (min-width:767px) {
+    .boxed {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: 450px;
+        margin-top: 20px;
+        border: 1px solid green;
+        overflow-x: hidden;
+        overflow-y: visible;
+    }  
+  }
+  @media screen and (max-width:767px) {
+    .boxed {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: 520px;
+        margin-top: 20px;
+        border: 1px solid green;
+        overflow-x: hidden;
+        overflow-y: visible;
+    }  
+  }
+  @media screen and (max-width:479px) {
+    .boxed {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: 520px;
+        margin-top: 20px;
+        border: 1px solid green;
+        overflow-x: hidden;
+        overflow-y: visible;
+    }  
+  }
+
+.box {
+    border: 2px solid black;
+}
+textarea {
+    font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
