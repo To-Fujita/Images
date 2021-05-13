@@ -40,13 +40,15 @@
 
 // 音声入力、音声認識のON/OFF設定
         function OnButtonClick_01() {
+          var timer = setInterval(recognition.start(), 3000);
           if (Speak.value == 'ON') {
             Speak.value ='OFF'
             recognition.stop();
+            clearInterval(timer);
           }
           else {
             Speak.value = 'ON'
-            recognition.start();
+            timer = setInterval(recognition.start(), 3000);
           }
         }
 
