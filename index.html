@@ -36,7 +36,7 @@
         let recognition = new SpeechRecognition();
         recognition.lang = 'ja-JP';
         recognition.interimResults = true;
-        recognition.continuous = true;
+        recognition.continuous = false;
 
 // 音声入力、音声認識のON/OFF設定
         function OnButtonClick_01() {
@@ -135,7 +135,7 @@
 // 返答の作成
         function makeAnswer(Temp_Text) {
           var temp
-          if (Temp_Text == '音声認識終了。') {
+          if (Temp_Text.indexOf('音声認識終了') >= 0) {
             temp = Temp_Text + 'しました。';
             Speak.value = 'OFF';
           }
