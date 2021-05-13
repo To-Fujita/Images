@@ -6,12 +6,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
-    <h1>　
+    <center><h1>
       <img src="./images/F021_R.png" alt="CANDICE" style="width:50px;height:50px;"/>
-      チャットボット（オーム返し）　
-      <input style="position:absolute; top:10px; right:80px;" type="submit" value="音声 ON/OFF" onclick="OnButtonClick_01();"> <textarea readonly id="speak" rows= "1" cols="4" style="vertical-align:bottom; position:absolute; top:10px; right:20px;">OFF</textarea>
-      <input style="position:absolute; top:40px; right:80px;" type="submit" value="USER 男性/女性" onclick="OnButtonClick_02();"> <textarea readonly id="user" rows= "1" cols="4" style="vertical-align:bottom; position:absolute; top:40px; right:20px;">男性</textarea>
-    </h1>
+      チャットボット（オーム返し）<br>
+      <input type="submit" value="音声 ON/OFF" onclick="OnButtonClick_01();"> <textarea style="vertical-align:bottom;" readonly id="speak" rows= "1" cols="4">OFF</textarea>　
+      <input type="submit" value="USER 男性/女性" onclick="OnButtonClick_02();"> <textarea style="vertical-align:bottom;" readonly id="user" rows= "1" cols="4">男性</textarea>
+    </h1></center>
     <div class="box"></div>
     <div class="boxed">
       <div>
@@ -134,7 +134,14 @@
 
 // 返答の作成
         function makeAnswer(Temp_Text) {
-          var temp = Temp_Text + '　ですね？';
+          var temp
+          if (Temp_Text == '音声認識終了。') {
+            temp = Temp_Text + 'しました。';
+            Speak.value = 'OFF';
+          }
+          else {
+            temp = Temp_Text + '　ですね？';
+          }
           return temp;
         }
 
