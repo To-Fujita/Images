@@ -135,7 +135,7 @@
 // 返答の作成
         function makeAnswer(Temp_Text) {
           var temp
-          if (Temp_Text.indexOf('音声認識終了') >= 0 || Temp_Text.indexOf('音声入力終了') >= 0) {
+          if ((Temp_Text.indexOf('音声認識') >= 0 && Temp_Text.indexOf('終了') >= 0) || (Temp_Text.indexOf('音声入力') >= 0 && Temp_Text.indexOf('終了') >= 0)) {
             temp = Temp_Text + 'しました。';
             Speak.value = 'OFF';
           }
