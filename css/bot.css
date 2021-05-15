@@ -69,7 +69,18 @@ h3 {
     overflow-x: hidden;
     overflow-y: visible;
 }
-
+input {
+    font-size: 0.7em;
+    margin: 0;
+    padding: 0px;
+}
+textarea {
+    font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+    font-size: 0.7em;
+    margin: 0;
+    padding: 0px;
+    text-align: center;
+}
 @media screen and (min-width:1024px) {
     .boxed {
         margin-left: auto;
@@ -104,21 +115,21 @@ h3 {
         border: 1px solid green;
         overflow-x: hidden;
         overflow-y: visible;
-    }  
+    }
+    input {
+        font-size: 0.8em;
+        margin: 0;
+        padding: 0px;
+    }
+    textarea {
+        font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+        font-size: 0.8em;
+        margin: 0;
+        padding: 0px;
+        text-align: center;
+    }    
   }
 
 .box {
     border: 2px solid black;
-}
-input {
-    font-size: 0.5em;
-    margin: 0;
-    padding: 0px;
-}
-textarea {
-    font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
-    font-size: 0.5em;
-    margin: 0;
-    padding: 0px;
-    text-align: center;
 }

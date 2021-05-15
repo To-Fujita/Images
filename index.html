@@ -40,15 +40,21 @@
 
 // 音声入力、音声認識のON/OFF設定
         function OnButtonClick_01() {
-          var timer;
           if (Speak.value == 'ON') {
-            Speak.value ='OFF'
+            Speak.value ='OFF';
             recognition.stop();
-            clearInterval(timer);
           }
           else {
-            Speak.value = 'ON'
-            timer = setInterval(recognition.start(), 3000);
+            Speak.value = 'ON';
+            if (navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
+              navigation.mediaDevice.getUserMedia({ audio: true })
+              .then(stream => {
+                const $a = document.createElement('audio');
+                $a.autoplay = false;
+                $a.srcObject = stream;
+              })
+            }
+            recognition.start();
           }
         }
 
@@ -138,7 +144,8 @@
         function makeAnswer(Temp_Text) {
           var temp
           if ((Temp_Text.indexOf('音声認識') >= 0 && Temp_Text.indexOf('終了') >= 0) || (Temp_Text.indexOf('音声入力') >= 0 && Temp_Text.indexOf('終了') >= 0)) {
-            temp = Temp_Text + 'しました。';
+            temp = '音声入力を終了しました。';
+            speech(temp);
             Speak.value = 'OFF';
           }
           else {
