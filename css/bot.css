@@ -73,6 +73,7 @@ input {
     font-size: 0.7em;
     margin: 0;
     padding: 0px;
+    vertical-align:bottom;
     text-align: center;
 }
 textarea {
@@ -80,7 +81,9 @@ textarea {
     font-size: 0.7em;
     margin: 0;
     padding: 0px;
+    vertical-align:bottom;
     text-align: center;
+    height: 50px;
 }
 @media screen and (min-width:1024px) {
     .boxed {
