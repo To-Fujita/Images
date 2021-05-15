@@ -49,9 +49,9 @@
             if (navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
               navigation.mediaDevice.getUserMedia({ audio: true })
               .then(stream => {
-                const $a = document.createElement('audio');
-                $a.autoplay = false;
-                $a.srcObject = stream;
+                const Audio_in = document.createElement('audio');
+                Audio_in.autoplay = false;
+                Audio_in.srcObject = stream;
               })
             }
             recognition.start();
