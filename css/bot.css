@@ -116,18 +116,6 @@ textarea {
         overflow-x: hidden;
         overflow-y: visible;
     }
-    input {
-        font-size: 0.8em;
-        margin: 0;
-        padding: 0px;
-    }
-    textarea {
-        font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
-        font-size: 0.8em;
-        margin: 0;
-        padding: 0px;
-        text-align: center;
-    }    
   }
 
 .box {
