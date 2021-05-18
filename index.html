@@ -8,7 +8,7 @@
   </head>
   <body>
     <center><h1>
-      <img src="./images/F021_R.png" alt="CANDICE" style="width:50px;height:50px;"/>
+      <img src="./images/F021_R.png" alt="CANDICE" style="width:50px;height:50px;vertical-align:bottom;"/>
       チャットボット（オーム返し）<br>
       <input type="submit" value="音声 ON/OFF" onclick="OnButtonClick_01();"> <textarea readonly id="speak" rows= "1" cols="5">OFF</textarea>　
       <input type="submit" value="USER 男性/女性" onclick="OnButtonClick_02();"> <textarea readonly id="user" rows= "1" cols="5">男性</textarea>
@@ -18,7 +18,7 @@
       <div>
         <div id="chatbox">
           <p class="botText">
-            <img src="./images/F021_R.png" alt="BOT" style="width:50px;height:50px;"/>
+            <img src="./images/F021_R.png" alt="BOT" style="width:50px;height:50px;vertical-align:bottom;"/>
             <span>私はチャットボットです。　何か話しかけていただけますか？💖</span>
           </p>
         </div>
@@ -67,12 +67,13 @@
         function getBotResponse() {
           var rawText = document.getElementById("textInput");
           var userHtml = '<p class="userText"><span>' + rawText.value + 
-            '</span><img src=' + user_icon + ' alt="USER" style="width:50px;height:50px;"/></p>';
-            var data = makeAnswer(rawText.value);
+            '</span><img src=' + user_icon + ' alt="USER" style="width:50px;height:50px;vertical-align:bottom;"/></p>';
+          var data = makeAnswer(rawText.value);
           $("#textInput").val("");
           $("#chatbox").append(userHtml);
           document.getElementById("userInput").scrollIntoView({ block: "start", behavior: "smooth" });
-          var botHtml = '<p class="botText"><img src=' + bot_icon + ' alt="BOT" style="width:50px;height:50px;"/><span>' + data + '</span></p>';
+          var botHtml = '<p class="botText"><img src=' + bot_icon + 
+            ' alt="BOT" style="width:50px;height:50px;vertical-align:bottom;"/><span>' + data + '</span></p>';
           $("#chatbox").append(botHtml);
           speech(data);
           document.getElementById("userInput").scrollIntoView({ block: "start", behavior: "smooth" });
