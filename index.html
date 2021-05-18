@@ -118,7 +118,7 @@
 
         recognition.onend = (event) => {
 //          Speak.value = 'OFF';
-          if (Speak.value == 'ON') {
+          if (Speak.value == 'ON' && !speechSynthesis.speaking) {
             setTimeout(recognition.start(), 3000);
           } 
         }
