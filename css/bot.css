@@ -33,9 +33,9 @@ h1 {
 .userText {
     color: white;
     font-family: monospace;
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: right;
-    line-height: 2em;
+    line-height: 1.5em;
 }
 .userText span {
     background-color: #808080;
@@ -45,9 +45,9 @@ h1 {
 .botText {
     color: white;
     font-family: monospace;
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: left;
-    line-height: 2em;
+    line-height: 1.5em;
 }
 .botText span {
     background-color: #4169e1;
