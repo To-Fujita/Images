@@ -9,7 +9,12 @@ h1 {
     margin: 0;
     padding: 5px;
 }
-
+h3 {
+    color: black;
+    font-size: 20px;
+    margin-top: 3px;
+    text-align: center;
+}
 #chatbox {
     margin-left: auto;
     margin-right: auto;
@@ -28,14 +33,14 @@ h1 {
     border: none;
     border-bottom: 3px solid black;
     font-family: monospace;
-    font-size: 2em;
+    font-size: 17px;
 }
 .userText {
     color: white;
     font-family: monospace;
-    font-size: 1.5em;
+    font-size: 17px;
     text-align: right;
-    line-height: 2.1em;
+    line-height: 30px;
 }
 .userText span {
     background-color: #808080;
@@ -45,9 +50,9 @@ h1 {
 .botText {
     color: white;
     font-family: monospace;
-    font-size: 1.5em;
+    font-size: 17px;
     text-align: left;
-    line-height: 2.1em;
+    line-height: 30px;
 }
 .botText span {
     background-color: #4169e1;
@@ -81,7 +86,7 @@ textarea {
     padding: 0px;
     vertical-align:bottom;
     text-align: center;
-    height: 1.6em;
+    height: 50px;
 }
 @media screen and (min-width:1024px) {
     .boxed {
