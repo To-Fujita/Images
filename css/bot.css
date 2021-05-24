@@ -113,9 +113,6 @@ textarea {
     }  
 }
 @media screen and (max-width:767px) {
-    body{
-        font-size: 3em;
-    }
     .boxed {
         margin-left: auto;
         margin-right: auto;
