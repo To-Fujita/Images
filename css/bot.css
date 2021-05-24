@@ -86,7 +86,7 @@ textarea {
     padding: 0px;
     vertical-align:bottom;
     text-align: center;
-    height: 1.6em;
+    height: 1.5em;
 }
 @media screen and (min-width:1024px) {
     .boxed {
