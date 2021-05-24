@@ -1,6 +1,7 @@
 /*  CSS for Chat Bot by T. Fujita 2021/5/10 */
 body {
     font-family: monospace;
+    -webkit-text-size-adjust: 100%;
 }
 h1 {
     background-color: #e5e5ff;
