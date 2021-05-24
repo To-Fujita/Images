@@ -127,3 +127,19 @@ textarea {
         overflow-y: visible;
     }
 }
+
+@media screen and (max-width:480px) {
+    body{
+        font-size: 1.5em;
+    }
+    .boxed {
+        margin-left: auto;
+        margin-right: auto;
+        width: 94%;
+        height: 90vh;
+        margin-top: 20px;
+        border: 1px solid green;
+        overflow-x: hidden;
+        overflow-y: visible;
+    }
+}
