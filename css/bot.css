@@ -1,12 +1,16 @@
 /*  CSS for Chat Bot by T. Fujita 2021/5/10 */
+html {
+    font-size: 62.5%;
+}
 body {
     font-family: monospace;
     -webkit-text-size-adjust: 100%;
+    font-size: 2em;
 }
 h1 {
     background-color: #e5e5ff;
     display: inline-block;
-    font-size: 3em;
+    font-size: 2em;
     margin: 0;
     padding: 5px;
 }
@@ -118,6 +122,5 @@ textarea {
         border: 1px solid green;
         overflow-x: hidden;
         overflow-y: visible;
-        font-size: 2em;
     }
 }
