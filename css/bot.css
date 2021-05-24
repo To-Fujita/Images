@@ -118,29 +118,6 @@ textarea {
         border: 1px solid green;
         overflow-x: hidden;
         overflow-y: visible;
-    }
-    .userText {
-        color: red;
-        font-family: monospace;
         font-size: 2em;
-        text-align: right;
-        line-height: 2.1em;
-    }
-    .userText span {
-        background-color: #808080;
-        padding: 10px;
-        border-radius: 2px;
-    }
-    .botText {
-        color: black;
-        font-family: monospace;
-        font-size: 2em;
-        text-align: left;
-        line-height: 2.1em;
-    }
-    .botText span {
-        background-color: #e5e5ff;
-        padding: 10px;
-        border-radius: 2px;
     }
 }
