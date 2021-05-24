@@ -3,7 +3,7 @@ body {
     font-family: monospace;
 }
 h1 {
-    background-color: #D5F5E3;
+    background-color: #e5e5ff;
     display: inline-block;
     font-size: 3em;
     margin: 0;
@@ -50,7 +50,7 @@ h1 {
     line-height: 2.1em;
 }
 .botText span {
-    background-color: #ffde98;
+    background-color: #e5e5ff;
     padding: 10px;
     border-radius: 2px;
 }
