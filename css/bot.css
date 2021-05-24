@@ -5,7 +5,7 @@ html {
 body {
     font-family: monospace;
     -webkit-text-size-adjust: 100%;
-    font-size: 2em;
+    font-size: 2.0em;
 }
 h1 {
     background-color: #e5e5ff;
@@ -18,7 +18,7 @@ h1 {
 #chatbox {
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 94%;
     margin-top: 30px;
 }
 #userInput {
@@ -62,7 +62,7 @@ h1 {
 .boxed {
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 94%;
     height: 70vh;
     margin-top: 20px;
     border: 1px solid green;
@@ -92,7 +92,7 @@ textarea {
     .boxed {
         margin-left: auto;
         margin-right: auto;
-        width: 90%;
+        width: 94%;
         height: 70vh;
         margin-top: 20px;
         border: 1px solid green;
@@ -104,7 +104,7 @@ textarea {
     .boxed {
         margin-left: auto;
         margin-right: auto;
-        width: 90%;
+        width: 94%;
         height: 70vh;
         margin-top: 20px;
         border: 1px solid green;
@@ -114,12 +114,12 @@ textarea {
 }
 @media screen and (max-width:767px) {
     body{
-        font-size: 3rem;
+        font-size: 3em;
     }
     .boxed {
         margin-left: auto;
         margin-right: auto;
-        width: 90%;
+        width: 94%;
         height: 90vh;
         margin-top: 20px;
         border: 1px solid green;
