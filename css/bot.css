@@ -119,4 +119,28 @@ textarea {
         overflow-x: hidden;
         overflow-y: visible;
     }
+    .userText {
+        color: white;
+        font-family: monospace;
+        font-size: 1.8em;
+        text-align: right;
+        line-height: 2.1em;
+    }
+    .userText span {
+        background-color: #808080;
+        padding: 10px;
+        border-radius: 2px;
+    }
+    .botText {
+        color: black;
+        font-family: monospace;
+        font-size: 1.8em;
+        text-align: left;
+        line-height: 2.1em;
+    }
+    .botText span {
+        background-color: #e5e5ff;
+        padding: 10px;
+        border-radius: 2px;
+    }
 }
