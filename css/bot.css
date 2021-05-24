@@ -120,7 +120,7 @@ textarea {
         overflow-y: visible;
     }
     .userText {
-        color: white;
+        color: red;
         font-family: monospace;
         font-size: 2em;
         text-align: right;
